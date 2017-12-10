@@ -1,0 +1,419 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>大成网菜单</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			border:0;
+			font-family:"微软雅黑";
+		}
+		ul{list-style:none;  }
+		a{
+			color:#FFF;
+			font-size:24px;
+		}
+		body{background:#F1F1F1;}
+
+		.a{
+			width:1750px;
+			height:90px;
+			background:#4285DB;
+			margin:20px auto;
+			padding:10px;}
+
+		.b1{
+			width:450px;
+			height:90px;
+			border-right:2px solid #3C7AC9;
+			float:left;
+			padding:0 14px;
+		}
+
+		.b1 li,.c1 li{
+			width:100px;
+			height:45px;
+			background:#4285DB;
+			padding:0 24px;
+			float:left;
+			text-align:center;
+			line-height:45px;
+		}
+
+		.b1  a,.c1  a{
+			display:block;
+			width:100px;
+			height:45px;
+			text-decoration:none;
+		}
+
+		.b1  a:hover,.c1  a:hover{background:#3C7AC9;}
+		.c1{
+			width:240px;
+			height:90px;
+			float:left;
+			padding:0 34px;
+		}
+
+		.dd{
+			width:1770px;
+			height:300px;
+			padding:20px 0;
+			margin:0 auto;
+		}
+		.da{
+			width:550px;
+			height:280px;
+			background:url(images/bg2.png) no-repeat 0 10px;
+			margin-right:56px;
+			background:#FFF;
+			float:left;
+			border:1px solid #CCC;
+		}
+		.dc{ margin:0; padding:0;}
+
+		.dhs{
+			width:550px;
+			height:70px;
+		}
+		.dhs h4{ display:block;
+			width:400x;
+			height:50px;
+			line-height:50px;
+			margin-left:20px;
+			text-shadow:1px 1px 2px rgba(0,0,0,0.5);
+			float:left;
+		}
+		.dhs span{display:block;
+			width:80px;
+			height:40px;
+			margin:10px 0 0 0;
+			line-height:40px;
+			float:right;
+			background:#36C;
+			box-shadow:2px 2px 2px rgba(0,0,0,0.5);
+			-webkit-box-shadow:2px 2px 2px rgba(0,0,0,0.5);
+			text-align:center;
+		}
+		.dhs span a{display:block;
+			text-decoration:none;
+			width:80px;
+			height:40px;
+			font-size:16px;
+			text-align:center;}
+		.dhs span a:hover{color:#09C;}
+
+		.da ul{width:500px;
+			height:188px;
+			border:1px solid #CCC;
+			font-size:24px;
+			margin:0  auto;
+		}
+		.da ul li{width:400px;
+			height:60px;
+			background:url(images/wenti.jpg) no-repeat 20px 24px;
+			padding-left:60px;
+			line-height:60px;
+			font-size:20px;
+		}
+		.da ul li a{
+			display:block;
+			width:420px;
+			height:60px;
+			text-decoration:none;
+			line-height:60px;
+			font-size:20px;
+			color:#000;
+		}
+		.da ul li a:hover{
+			color:#09C;
+			text-decoration:underline;
+		}
+
+		.ww{
+			width:1710px;
+			height:380px;
+			padding:10px 30px 30px 30px;
+			background:#FFF;
+			margin:0px auto;
+			background: url(images/ew.jpg) no-repeat ;
+			background-size:100%;
+		}
+
+		.ww h1{
+			display:block;
+			width:1710px;
+			height:60px;
+		}
+
+		.pic{
+			width:450px;
+			height:320px;
+			background:#ccc;
+			float:left;
+			margin-right:100px;
+		}
+		.pic a{
+			display:block;
+			width:450px;
+			height:320px;
+			text-decoration:none;
+		}
+		.pic img{width:450px;
+			height:320px;
+			position:absolute;
+		}
+		.pic span{display:block;
+			position:relative;
+			background:rgba(0,0,0,0.5);
+			width:450px;
+			height:30px;
+			font-size:16px;
+			text-align:center;
+			line-height:30px;
+			top:290px;
+		}
+		.pic a:hover span{background:rgba(66,41,1,0.5);}
+
+		.xw{width:600px;
+			height:320px;
+			float:left;
+			margin-right:100px;
+		}
+		.xw h2{display:block;
+			width:600px;
+			height:50px;
+			text-align:center;
+			line-height:50px;
+			color:#09C;
+		}
+		.xw h2 a{text-align:center;
+			line-height:50px;
+			color:#09C;
+			text-decoration:none;
+		}
+		.xw h2 a:hover{color:#933;}
+
+		.xwp{width:600px;
+			height:130px;
+			font-size:18px;
+			margin:10px 0;
+		}
+
+		.xwp p{height:100px;
+			text-indent:2em;
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp:4;
+			overflow: hidden;
+		}
+
+		.xwp a{color:#933; text-decoration: none; text-align:right;}
+
+		.xw li{width:600px;
+			height:30px;
+			padding:5px 0;
+			float:left;
+			line-height:30px;
+		}
+		.xw li span{font-weight:bold; color:#000;}
+		.xw li a{ display:block;
+			width:600px;
+			height:30px;
+			color:#000;
+			text-decoration:none;
+			color:#333;
+		}
+		.xw li a:hover{ color:#900;}
+
+		.right{width:460px;
+			height:320px;
+			float:left;
+		}
+		.rightp{
+			margin:0 0 8px 0;
+			border:1px solid #CCC;
+			width:450px;
+			height:150px;
+			padding:6px;
+		}
+		.rightp p{
+			display:block;
+			width:420px;
+			float:right;
+			height:120px;
+			margin:20px
+		}
+		.rightp p img{
+			display:block;
+			margin-right:30px;
+			width:140px;
+			height:128px;
+			float:left;
+		}
+
+		.right h2{ line-height:46px;}
+		.rightp p a{color:#933; text-decoration: none;}
+
+		.right li{
+			width:460px;
+			background:# 09C;
+			height:26px;
+			padding:5px 0;
+			float:left;
+			line-height:26px;
+		}
+		.right li span{
+			display:block;
+			color:#000;
+			float:left;
+			width:70px;
+			height:26px;
+			border-right:2px solid #000;
+			line-height:26px;
+			text-align:center;
+			margin-right:10px;
+			font-weight:bold;
+			font-size:20px;
+		}
+		.right li a{
+			display:block;
+			width:420px;
+			height:26px;
+			font-size:18px;
+			text-decoration:none;
+			color:#333;
+		}
+		.right li a:hover{color:#06C;}
+
+
+
+	</style>
+</head>
+
+<body>
+<div class="a">
+	<ul class="b1">
+		<li><a href="">首页</a></li>
+		<li><a href="">公益</a></li>
+		<li><a href="">辟谣</a></li>
+		<li><a href="">图库</a></li>
+		<li><a href="">娱乐</a></li>
+		<li><a href="">政策</a></li>
+	</ul>
+
+	<ul class="b1">
+		<li><a href="">首页</a></li>
+		<li><a href="">公益</a></li>
+		<li><a href="">辟谣</a></li>
+		<li><a href="">图库</a></li>
+		<li><a href="">娱乐</a></li>
+		<li><a href="">政策</a></li>
+	</ul>
+
+
+	<ul class="b1">
+		<li><a href="">首页</a></li>
+		<li><a href="">公益</a></li>
+		<li><a href="">辟谣</a></li>
+		<li><a href="">图库</a></li>
+		<li><a href="">娱乐</a></li>
+		<li><a href="">政策</a></li>
+	</ul>
+
+
+	<ul class="c1">
+		<li><a href="">四川制造</a></li>
+		<li><a href="">四川制造</a></li>
+	</ul>
+</div>
+
+
+
+
+
+<div class="dd">
+	<div class="da">
+		<div class="dhs"><h4>企鹅社区·帮帮</h4><span><a href="">我要提问</a></span></div>
+		<ul>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+		</ul>
+	</div>
+
+	<div class="da">
+		<div class="dhs"><h4>企鹅社区·帮帮</h4><span><a href="">我要提问</a></span></div>
+		<ul>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+		</ul>
+	</div>
+
+	<div class="da dc">
+		<div class="dhs"><h4>企鹅社区·帮帮</h4><span><a href="">我要提问</a></span></div>
+		<ul>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+			<li><a href="">如何利用晚上时间自我提高</a></li>
+		</ul>
+	</div>
+</div>
+
+
+
+<div class="ww">
+	<h1>财经</h1>
+	<div class="pic">
+		<a href="">
+			<img title="点击" alt="您所查看的图片不存在" src="images/ul+position.jpg">
+			<span>高校推图书馆阅读护照 新生可私人订制</span>
+		</a>
+	</div>
+
+
+	<div class="xw">
+		<h2><a href="">保险是否越早买越划算 哪些保险要早买</a></h2>
+		<div class="xwp">
+			<p>
+				保险是不是越早买越划算，现在这么贵，以后会不会便宜？今天咱们就来聊一聊这个话题：保险真的越早买越划算吗
+				保险是不是越早买越划算，现在这么贵，以后会不会便宜？今天咱们就来聊一聊这个话题：保险真的越早买越划算吗
+				保险是不是越早买越划算，现在这么贵，以后会不会便宜？今天咱们就来聊一聊这个话题：保险真的越早买越划算吗
+				保险是不是越早买越划算，现在这么贵，以后会不会便宜？今天咱们就来聊一聊这个话题：保险真的越早买越划算吗
+
+			</p><a href="" >[详细]</a>
+		</div>
+
+		<ul>
+			<li><a href=""><span>【聚焦】</span>人民币汇率预期转向 两通道外资涌入创新高</a></li>
+			<li><a href=""><span>【聚焦】</span>人民币汇率预期转向 两通道外资涌入创新高</a></li>
+			<li><a href=""><span>【聚焦】</span>人民币汇率预期转向 两通道外资涌入创新高</a></li>
+		</ul>
+
+	</div>
+
+
+	<div class="right">
+		<h2>热点聚焦</h2>
+		<div class="rightp">
+			<p><img src="images/hover1.png">
+				聊一聊这个话题：保险真的越早买越划算吗
+
+				<br /> <br /><a href="" >查看详情</a> </p>
+		</div>
+
+		<ul>
+			<li><a href=""><span>提醒</span>两通道外资涌入创新高</a></li>
+			<li><a href=""><span>提醒</span>两通道外资涌入创新高</a></li>
+			<li><a href=""><span>提醒</span>两通道外资涌入创新高</a></li>
+		</ul>
+
+	</div>
+
+</div>
+
+</body>
+</html>
