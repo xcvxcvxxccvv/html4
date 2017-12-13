@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Microsoft Yahei;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .nav {
+            height: auto;
+            width: 800px;
+            margin: 10px auto;
+        }
+
+        .nav ul {
+            height: 40px;
+            width: 800px;
+            background: #9CC;
+            margin: 0 auto;
+        }
+
+        .nav li {
+            height: 40px;
+            width: 98px;
+            float: left;
+            background: #099;
+            border-right: 2px solid #fff;
+        }
+
+        .nav a {
+            display: block;
+            height: 40px;
+            width: 98px;
+            line-height: 40px;
+            font-size: 24px;
+            text-align: center;
+            color: #FFF;
+        }
+
+        .nav a:hover {
+            color: #099;
+            background: #9CC;
+        }
+
+        #one {
+            width: 98px;
+            display: none;
+            position: relative;
+        }
+
+        #one li {
+            border-top: 2px solid #fff;
+        }
+
+        .nav li:hover #one {
+            display: block;
+        }
+
+        #two {
+            width: 98px;
+            display: none;
+            position: absolute;
+            left: 98px;
+            top: 83px
+        }
+
+        #one li:hover #two {
+            display: block;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<div class="nav">
+    <ul>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a>
+
+            <ul id="one">
+                <li><a href="#">211</a></li>
+                <li><a href="#">211</a></li>
+                <li><a href="#">211</a>
+
+                    <ul id="two">
+                        <li><a href="#">222</a></li>
+                        <li><a href="#">222</a></li>
+                        <li><a href="#">222</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+    </ul>
+</div>
+</body>
+</html>
